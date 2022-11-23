@@ -18,18 +18,18 @@ public class App {
                 konto1.setKontostand( ( 10000 * 2 ) );
                 output( "Konto 1 Kontostand c): " + konto1.getKontostand() );
 
-            output("----------------------");
+                output( "----------------------" );
 
         // 2 instance - **konto2** | konto2 → Verdreifachung
             Konto konto2 = new Konto( 10000 );
             konto2.setKontostand( konto2.getKontostand() * 3 );
             output( "Konto 2 Kontostand: " + konto2.getKontostand() );
-            output("----------------------");
+            output( "----------------------" );
             
         // 3 instance - **konto3** | konto3 → Verzehnfachung
             Konto konto3 = new Konto( 10000 );
             output( "Konto 3 Kontostand: " + ( konto3.getKontostand() * 10 ) );
-            output("----------------------");
+            output( "----------------------" );
     }
 
     public static void output( String outputStr ) { System.out.println( outputStr ); }
