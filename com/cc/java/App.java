@@ -5,7 +5,7 @@ public class App {
     public static void main(String[] args) {
         // 1 instance - **konto1** | konto1 → Verdoppelung
             output("----------------------");
-            
+
             // Beispiel 1, als Rechnung
                 Konto konto1 = new Konto( 10000 );
                 output( "Konto 1 Kontostand a): " + ( konto1.getKontostand() * 2 ) );
@@ -30,6 +30,6 @@ public class App {
             output( "Konto 3 Kontostand: " + ( konto3.getKontostand() * 10 ) );
             output("----------------------");
     }
-
+    
     public static void output( String outputStr ) { System.out.println( outputStr ); }
 }
