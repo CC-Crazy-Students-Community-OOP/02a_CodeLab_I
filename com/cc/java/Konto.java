@@ -9,6 +9,5 @@ public class Konto {
         
     // getter & setter
         public int getKontostand() { return kontostand; }
-        public int getOriginalKontostand() { return kontostand; }
         public void setKontostand( int kontostand ) { this.kontostand = kontostand; }
 }
