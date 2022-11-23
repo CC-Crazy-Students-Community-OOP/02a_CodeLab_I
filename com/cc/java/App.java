@@ -4,6 +4,7 @@ public class App {
     
     public static void main(String[] args) {
         // 1 instance - **konto1** | konto1 → Verdoppelung
+            output("----------------------");
             Konto konto1 = new Konto( 10000 );
             output( "Konto 1 Kontostand a): " + ( konto1.getKontostand() * 2 ) );               // Beispiel 1, als Rechnung
             konto1.setKontostand( 20000 );
