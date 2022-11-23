@@ -22,7 +22,8 @@ public class App {
 
         // 2 instance - **konto2** | konto2 → Verdreifachung
             Konto konto2 = new Konto( 10000 );
-            output( "Konto 2 Kontostand: " + ( konto2.getKontostand() * 3 ) );
+            konto2.setKontostand( konto2.getKontostand() * 3 );
+            output( "Konto 2 Kontostand: " + konto2.getKontostand() );
             output("----------------------");
             
         // 3 instance - **konto3** | konto3 → Verzehnfachung
