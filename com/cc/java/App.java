@@ -5,12 +5,19 @@ public class App {
     public static void main(String[] args) {
         // 1 instance - **konto1** | konto1 → Verdoppelung
             output("----------------------");
-            Konto konto1 = new Konto( 10000 );
-            output( "Konto 1 Kontostand a): " + ( konto1.getKontostand() * 2 ) );               // Beispiel 1, als Rechnung
-            konto1.setKontostand( 20000 );
-            output( "Konto 1 Kontostand b): " + konto1.getKontostand() );                       // Beispiel 2, als neusetzen der Variable
-            konto1.setKontostand( ( 10000 * 2 ) );
-            output( "Konto 1 Kontostand c): " + konto1.getKontostand() );                       // Beispiel 3, als neusetzen der Variable mit Rechnung
+            
+            // Beispiel 1, als Rechnung
+                Konto konto1 = new Konto( 10000 );
+                output( "Konto 1 Kontostand a): " + ( konto1.getKontostand() * 2 ) );
+
+            // Beispiel 2, als neusetzen der Variable
+                konto1.setKontostand( 20000 );
+                output( "Konto 1 Kontostand b): " + konto1.getKontostand() );
+
+            // Beispiel 3, als neusetzen der Variable mit Rechnung
+                konto1.setKontostand( ( 10000 * 2 ) );
+                output( "Konto 1 Kontostand c): " + konto1.getKontostand() );
+
             output("----------------------");
 
         // 2 instance - **konto2** | konto2 → Verdreifachung
