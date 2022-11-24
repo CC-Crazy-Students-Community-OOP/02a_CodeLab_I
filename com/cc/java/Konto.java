@@ -9,5 +9,17 @@ public class Konto {
         
     // getter & setter
         public int getKontostand() { return kontostand; }
+        public int getKontostandNew( int konto ) {
+            switch ( konto ) {
+                case 0:
+                    return kontostand * 2;
+                case 1:
+                    return kontostand * 3;
+                case 2:
+                    return kontostand * 10;
+                default:
+                return kontostand;
+            }
+        }
         public void setKontostand( int kontostand ) { this.kontostand = kontostand; }
 }
