@@ -8,6 +8,7 @@ public class Konto {
         public Konto( int kontostand ) { this.kontostand = kontostand; }
         
     // getter & setter
+        public void setKontostand( int kontostand ) { this.kontostand = kontostand; }
         public int getKontostand() { return kontostand; }
         public int getKontostandNew( int konto ) {
             switch ( konto ) {
@@ -21,5 +22,4 @@ public class Konto {
                 return kontostand;
             }
         }
-        public void setKontostand( int kontostand ) { this.kontostand = kontostand; }
 }
