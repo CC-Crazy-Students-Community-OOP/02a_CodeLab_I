@@ -38,6 +38,7 @@ public class App {
                 Konto konto3 = new Konto( 10000 );                                  // Objekt 3 wird erstellt
                     output( "Konto 3 Kontostand alt: " + konto3.getKontostand() );              // alter Kontostand
                     output( "Konto 3 Kontostand neu: " + ( konto3.getKontostand() * 10 ) );     // neuer Kontostand durch auslesen der alten Variable mit Rechnung
+                    output( "Fehler vom Konto 3: " + konto3.getKontostand() );                  // neuer Kontostand nicht korrekt, da Objekt nicht geändert wurde
                     output( "----------------------" );
             
         /*********************************************************/
@@ -82,11 +83,11 @@ public class App {
                 ( konto3.getKontostand() * 10 )
             };
             for ( int i = 0; i <= kontoOldB.length -1 ; i++ ) {
-                output( "Konto " + i + " Kontostand alt: " + kontoOldB[ i ] );                  // Schleife der Ausgabe des alten Kontostandes
+                output( "Konto " + ( i + 1 ) + " Kontostand alt: " + kontoOldB[ i ] );                  // Schleife der Ausgabe des alten Kontostandes
             }
             output( " " );
             for ( int i = 0; i <= kontoNewB.length - 1; i++ ) {
-                output( "Konto " + i + " Kontostand neu: " + kontoNewB[ i ] );                  // Schleife der Ausgabe des neuen Kontostandes
+                output( "Konto " + ( i + 1 ) + " Kontostand neu: " + kontoNewB[ i ] );                  // Schleife der Ausgabe des neuen Kontostandes
             }
             output( "----------------------" );
 
@@ -100,8 +101,8 @@ public class App {
                 konto[ i ] = new Konto( 10000 );
             }
             for ( int i = 0; i <= konto.length -1 ; i++ ) {                                     // Schleife erstellt die Outputs
-                output( "Konto " + i + " Kontostand alt: " + konto[ i ].getKontostand() );
-                output( "Konto " + i + " Kontostand neu: " + konto[ i ].getKontostandNew( i ) );
+                output( "Konto " + ( i + 1 ) + " Kontostand alt: " + konto[ i ].getKontostand() );
+                output( "Konto " + ( i + 1 ) + " Kontostand neu: " + konto[ i ].getKontostandNew( i ) );
                 output( " " );
             }
             output( "----------------------" );
