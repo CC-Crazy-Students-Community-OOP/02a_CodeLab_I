@@ -1,8 +1,8 @@
 package com.cc.java;
 public class App {
     
-    public static void main(String[] args) {
-        output("----------------------");
+    public static void main( String[] args ) {
+        output( "----------------------" );
         /*********************************************************/
         /*******          Beispiel 01 laut Aufgabe         *******/
         /*********************************************************/
@@ -56,11 +56,11 @@ public class App {
                 ( konto2.getKontostand() * 3 ), 
                 ( konto3.getKontostand() * 10 )
             };
-            for (int kontoA : kontoOldA) {
+            for ( int kontoA : kontoOldA ) {
                 output( "Konto Kontostand alt: " + kontoA );                                    // Schleife der Ausgabe des alten Kontostandes
     	    }
             output( " " );
-            for (int kontoB : kontoNewA) {
+            for ( int kontoB : kontoNewA ) {
                 output( "Konto Kontostand neu: " + kontoB );                                    // Schleife der Ausgabe des neuen Kontostandes
     	    }
             output( "----------------------" );
