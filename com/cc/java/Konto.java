@@ -2,7 +2,7 @@ package com.cc.java;
 
 public class Konto {
     // filed declaration
-        private int kontostand;
+        private int kontostand;                 // private setzen einer Classen Variable nennt man Kapselung (Encapsulation)
         
     // constructor
         public Konto( int kontostand ) { this.kontostand = kontostand; }
