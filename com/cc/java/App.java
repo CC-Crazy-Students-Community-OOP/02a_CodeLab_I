@@ -1,5 +1,4 @@
 package com.cc.java;
-
 public class App {
     
     public static void main(String[] args) {
@@ -87,28 +86,32 @@ public class App {
 
         
             // Beispiel 4, als Schleife erstellte Objekte
-            int konto1;
-            int konto2;
-            int konto3;
-
-            int Objekte[] = {
-                konto1 = new Konto( 10000 ),
-                konto2 = new Konto( 10000 ),
-                konto3 = new Konto( 10000 )
-            };
-            int Arr4[] = {
-                ( konto1.getKontostand() * 2 ), 
-                ( konto2.getKontostand() * 3 ), 
-                ( konto3.getKontostand() * 10 )
-            };
-            for (int i = 0; i <= Arr3.length -1 ; i++) {
-                output( "Konto " + i + " Kontostand alt: " + Arr3[ i ] );
-            }
-            output( " " );
-            for (int i = 0; i <= Arr4.length - 1; i++) {
-                output( "Konto " + i + " Kontostand neu: " + Arr4[ i ] );
-            }
             output( "----------------------" );
+
+
+            Konto[] konto;
+            konto = new Konto[3];
+            output( String.valueOf(konto.length) );
+
+
+             
+ 
+            // // Initializing the first element
+            // // of the array
+            // konto[0] = new Konto( 10000 );
+    
+            // // Initializing the second element
+            // // of the array
+            // konto[1] = new Konto(1701289219, "Omm Prasad");
+    
+            // // Displaying the student data
+            // System.out.println(
+            //     "Student data in student arr 0: ");
+            //     konto[0].display();
+    
+            // System.out.println(
+            //     "Student data in student arr 1: ");
+            //     konto[1].display();
     }
 
     public static void output( String outputStr ) { System.out.println( outputStr ); }
